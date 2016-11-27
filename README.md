@@ -7,8 +7,8 @@ Le site n'a jamais été complètement fini, et peut-être qu'un jour il sera en
 
 ## Auteurs
 
-[Marion Bonvoust](http://www.marionbonvoust.fr) - Intégrateur
-[Martin Delanoë](http://www.martindelanoe.fr) - Intégrateur
-[Étienne Barbedette](http://etiennebarbedette.fr/) - Webdesigner
-[Alan Rivet](https://www.behance.net/AlanRivet) - Développeur
-Clément Lemoine (C'est moi) - Développeur
+* [Marion Bonvoust](http://www.marionbonvoust.fr) - Intégrateur
+* [Martin Delanoë](http://www.martindelanoe.fr) - Intégrateur
+* [Étienne Barbedette](http://etiennebarbedette.fr/) - Webdesigner
+* [Alan Rivet](https://www.behance.net/AlanRivet) - Développeur
+* Clément Lemoine (C'est moi) - Développeur
