@@ -1,0 +1,875 @@
+@font-face{
+    font-family: Rounded;
+    src: url('../medias/fonts/Rounded_Elegance.ttf');
+}
+
+@font-face{
+    font-family: Open sans;
+    src: url('../medias/fonts/OpenSans-Regular.ttf');
+}
+
+
+/****************************************menu*****************************************/
+html, body
+{
+    font-family: 'Open Sans';
+}
+#filtreNoir
+{
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    z-index: 64;
+    width: 100%;
+    display: none;
+    opacity: 0;
+}
+.filtreNoir
+{
+    display: block!important;
+    animation : animerFiltreNoir 0.2s linear forwards;
+}
+
+#filtreNoir2
+{
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    z-index: 55;
+    width: 100%;
+    display: none;
+    opacity: 0;
+}
+.filtreNoir2
+{
+    display: block!important;
+    animation : animerFiltreNoir2 0.2s linear forwards;
+}
+@keyframes animerFiltreNoir{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
+@keyframes animerFiltreNoir2{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+#profil
+{
+    position: fixed;
+    height: 100%;
+    display: flex;
+    -webkit-transition: margin 0.3s cubic-bezier(0, 0, .39, 1);
+-o-transition: margin 0.3s cubic-bezier(0, 0, .39, 1);
+transition: margin 0.3s cubic-bezier(0, 0, .39, 1);
+    background-color: white;
+    z-index: 65;
+    margin-left:-250px;
+}
+.ouvrirMenu
+{
+    margin-left:0px!important;
+}
+#profil>div:first-child
+{
+    background-color: #f1f1f1;
+    height: 100%;
+    width: 250px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction:column;
+}
+/*---------------------------debut contenu menu---------------------*/
+#profil>div:first-child>div:nth-child(1)
+{
+    height: 200px;
+    overflow: hidden;  
+}
+#profil>div:first-child>div:first-child>img
+{
+    width: 250px;  
+}
+#profil>div:first-child>div:first-child>div
+{
+    width: 250px;
+    height: 200px;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 40%, rgba(0,0,0,0.70) 100%);
+    position: absolute;
+    top: 0;  
+}
+#profil h1
+{       
+    font-size: 25px;
+    color: #FFFFFF;
+    letter-spacing: 2.2px;
+    margin-top: -44px;
+    font-weight: 700;
+    position: absolute;
+}
+#profil>div:first-child>div:nth-child(2)
+{
+    height: 30%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    margin-top: -25px;
+    -moz-box-shadow: 3px 2px 8px 0px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 3px 2px 8px 0px rgba(0, 0, 0, 0.13);
+    -o-box-shadow: 3px 2px 8px 0px rgba(0, 0, 0, 0.13);
+    box-shadow: 3px 2px 8px 0px rgba(0, 0, 0, 0.13);
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=rgba(0, 0, 0, 0.13), Direction=123, Strength=8);
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+#profil h1+div
+{
+    height: 90%;
+    display: flex;
+    flex-direction: column; 
+}
+#profil h1+div>div
+{
+    height: 100%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+#profil h1+div>div:first-child
+{
+      border-bottom: #d1d1d1 solid 1px;
+}
+#profil h1+div>div:last-child
+{
+      border-top: #d1d1d1 solid 1px;
+}
+#profil h1+div p
+{
+    font-size: 44px;
+    color: #28E0F4;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-align: center;  
+}
+
+#profil h1+div h3
+{
+    font-size: 14px;
+    color: #6c6c6c;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#profil>div:first-child>div:nth-child(3)
+{
+    height: 230px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    -moz-box-shadow: 3px 2px 8px 0px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 3px 2px 8px 0px rgba(0, 0, 0, 0.13);
+    -o-box-shadow: 3px 2px 8px 0px rgba(0, 0, 0, 0.13);
+    box-shadow: 3px 2px 8px 0px rgba(0, 0, 0, 0.13);
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=rgba(0, 0, 0, 0.13), Direction=123, Strength=8);
+    margin-top: 50px; 
+}
+#profil div:nth-child(3) h2
+{       
+    font-size: 20px;
+    color: #2e2e2e;
+    letter-spacing: 2px;
+    margin-top: -24px;
+    font-weight: 600;
+    position: absolute;
+}
+#profil div:nth-child(3)>div
+{       
+    height: 100%;
+}
+#profil div:nth-child(3)>div>div:first-child
+{       
+    height:190px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#profil div:nth-child(3)>div>div>div
+{       
+    width: 80px;
+    height: 80px;
+    margin-top: 13px;
+    background-color: grey;   
+}
+#profil div:nth-child(3)>div>div:last-child
+{       
+    height:40px;
+    display:flex;
+    align-items: center;  
+}
+#profil div:nth-child(3)>div>div:last-child:hover
+{       
+    cursor: pointer;
+}
+#profil div:nth-child(3) div:last-child p
+{       
+    margin-left: 15px;
+    font-size: 13px;
+    color: #8C8C8C;
+    font-weight: 600;
+}
+#profil div:nth-child(3) div:last-child img
+{       
+    margin-left: 8px;
+    width: 13px;
+}
+#profil>div:first-child>div:nth-child(4)
+{
+    height:60px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    display:flex;
+    align-items: center;  
+}
+#profil>div:first-child>div:nth-child(4)
+{
+    cursor: pointer;
+}
+#profil div:nth-child(4) div h2
+{
+    font-size: 20px;
+    color: #2e2e2e;
+    letter-spacing: 2.04px;
+    font-weight: 600;
+    margin-left: 40px;
+}
+#profil div:nth-child(4) div i
+{
+ 
+   font-size: 25px;
+    color: #2e2e2e;
+
+}
+#profil div:nth-child(4) div {
+     width: 250px; 
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+}
+
+#changerPhoto{
+    width : 100px;
+    overflow: hidden;
+	display : none;
+}
+
+@media screen and (max-height: 850px) {
+    #profil h1+div p
+    {
+        font-size: 30px; 
+    }
+    #profil h1+div h3
+    {
+        font-size: 12px;
+    }
+    #profil>div:first-child>div:nth-child(2)
+    {
+        height: 26%;
+    }
+  
+}
+@media screen and (max-height: 715px) {
+    #profil div:nth-child(3)>div>div>div:nth-child(n+3)
+    {       
+        display: none;
+    }
+    #profil div:nth-child(3)>div>div:first-child
+    {       
+        height:100px;
+    }
+    #profil>div:first-child>div:nth-child(3)
+    {
+        height: 140px;
+    }
+}
+@media screen and (max-height: 600px) {
+    body
+    {
+        display: none;
+    }
+}
+/*---------------------------fin contenu menu---------------------*/
+#profil>div:last-child
+{
+    background-color: #f68172;
+    height: 100%;
+    width: 10px;    
+}
+#profil>div:last-child>div
+{
+    background-color: #f68172;
+    height: 46px;;
+    width: 46px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -23px;
+    margin-left: -17px;
+    z-index: 1;
+}
+#profil>div:last-child>div:hover
+{
+    cursor: pointer;
+    animation : animer 0.2s 2 ease forwards ;
+    -webkit-animation : animer 0.2s 2 ease forwards ; 
+}
+
+@keyframes animer{
+    0% {
+        margin-left: -17px;
+    }
+
+    50% {
+        margin-left: -20px;
+    }
+    100% {
+        margin-left: -17px;
+    }
+}
+-webkit-@keyframes animer{
+    0% {
+        margin-left: -17px;
+    }
+
+    50% {
+        margin-left: -20px;
+    }
+    100% {
+        margin-left: -17px;
+    }
+}
+
+#profil>div:last-child img
+{
+    margin-left: 21px;
+    margin-top: 13px;
+    width: 17px; 
+}
+/******************************************************************************************/
+@keyframes apparaitreBandeau {
+  0% {
+    top:-100px;
+      opacity: 0;
+  }
+
+  100% {
+    top:0;
+    opacity: 100;
+  }
+}
+
+
+@keyframes apparaitreQuestions {
+  0% {
+    top:-170px;
+      opacity: 0;
+  }
+
+  100% {
+    top:200px;
+    opacity: 100;
+  }
+}
+@keyframes apparaitreFleche {
+  0% {
+    top:-100px;
+      opacity: 0;
+  }
+
+  100% {
+    top:26px;
+    opacity: 100;
+  }
+}
+@keyframes dezoomQuestion {
+  0% {
+    top: 50%;
+    font-size: 60px;
+      text-shadow: 2px 2px 9px rgba(0,0,0,0.50);
+  }
+  
+  100% {
+    top: 17px;
+    font-size: 40px;
+    text-shadow: 2px 2px 9px rgba(0,0,0,0);
+  }
+}
+
+#main
+{
+    position: relative;
+    background-color: rgba(0,0,0,0.48);
+    width: 100vw;
+    height: 100vh;
+background-image: linear-gradient(0deg, rgba(45,76,119,0.50) 0%, rgba(178,65,65,0.39) 100%); 
+}
+
+#main>img
+{
+    width: 50px;
+    height: auto;
+    position: fixed;
+    right: 25px;
+    bottom: 20px;
+    z-index: 20;
+}
+
+
+#bandeau_question
+{
+    position: relative;
+    background-color: #f68172;
+    height: 80px;
+    width: 950px;
+    left: 50%;
+    margin-left: -475px;
+    z-index: 30;
+    top:-100px;
+    animation: apparaitreBandeau 1.2s ease-in-out 1s;
+    animation-fill-mode : forwards;
+}
+
+#bandeau_question>h2{
+    z-index: 20;
+    position: fixed;
+    width: 100vw;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    vertical-align: middle;
+    font-size: 60px;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight:400;
+    text-shadow: 2px 2px 9px rgba(0,0,0,0.50);
+    animation: dezoomQuestion 1.2s ease-in-out 1s;
+    animation-fill-mode : forwards;
+}
+
+#bandeau_question>img
+{
+    
+    height: auto;
+    width: 40px;
+    position: absolute;
+    top:20px;
+   right: 15px;
+    animation: apparaitreFleche 1.2s ease-in-out 1s;
+    animation-fill-mode : forwards;
+    z-index: 50;
+    cursor: pointer;
+}
+
+
+#autres_questions
+{ 
+    text-align: center;
+    width: 950px;
+    left: 50%;
+    margin-left: -475px;
+    position: fixed;
+    top:-320px;
+    transition: margin 0.3s cubic-bezier(0,0,.39,1);
+ z-index: 20;
+    font-size: 40px;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight:400;
+}
+
+#autres_questions>h2
+{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#autres_questions>h2:first-child
+{
+    background-color: #f5705f;
+
+}
+
+#autres_questions>h2:nth-child(2)
+{
+   background-color: #f56351;
+}
+
+#autres_questions>h2:nth-child(3)
+{
+   background-color: #f56351;
+}
+
+#autres_questions>h2:nth-child(4)
+{
+   background-color: #f56351;
+}
+
+#autres_questions>h2:nth-child(5)
+{
+   background-color: #f56351;
+}
+
+#autres_questions>h2:nth-child(6)
+{
+   background-color: #f56351;
+}
+
+.dragdealer
+{
+ height: auto;
+}
+
+#video
+{
+    z-index: 0;
+    max-width: 300%;
+    height: 45%;
+    display:flex ;   
+    flex-direction:row ; 
+    flex-wrap:wrap;
+    align-content:flex-start;
+    position: fixed;
+}
+.video
+{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+#video:active
+{
+    cursor:all-scroll;
+}
+
+
+
+
+.ouvrir
+{
+    margin-top:400px;
+}
+
+.tourner
+{
+    transform: rotateX(-180deg);
+    transition: transform 0.3s linear forwards;
+}
+#icones
+{
+    position: fixed;
+    z-index: 50;
+    bottom: 19px;
+    right: 120px;
+}
+#icones>img
+{
+    width: 30px;
+}
+#icones>img:hover
+{
+    cursor: pointer;
+    
+}
+
+/************** Vidéo cliquée ********************/
+.videocliquee
+{
+    height:450px;
+    width: 800px;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    margin-top: -225px;
+    left: 50%;
+    margin-left: -400px;
+}
+
+#videoclique
+{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: relative;
+    z-index: 60;
+}
+
+.apparaitre
+{
+    display: block!important;
+    opacity: 1!important;
+}
+
+#fermerVideo
+{
+    cursor: pointer;
+}
+#videoclique>div:nth-child(2)
+{
+    height: 200px;
+    width: 700px;
+    position: fixed;
+    left: 50%;
+    margin-left: -350px;
+    top: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+#videoclique>div:nth-child(2)>div
+{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius:50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#videoclique>div:nth-child(2)>div:nth-child(odd)
+{
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+#videoclique>div:nth-child(2)>div:hover
+{
+    opacity: 1;
+}
+#videoclique>div:nth-child(2)>div:nth-child(2)
+{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    background-color: transparent;
+}
+#videoclique>div:nth-child(2)>div:first-child>i
+{
+    color:#28e0f4;
+}
+
+#videoclique>div:nth-child(2)>div:nth-child(2)>i
+{
+    color: #f7f71e;
+    font-size: 25pt
+}
+
+#videoclique>div:nth-child(2)>div:nth-child(3)>i
+{
+    color: #f5705f;
+}
+#videoclique>img
+{
+    width: 20px;
+    position: fixed;
+    left: 50%;
+    margin-left: 380px;
+    top: 50%;
+    margin-top:-250px
+}
+/************** RESPONSIVE 1000 ******************/
+
+@media only screen and (max-width : 1000px)
+{
+    @keyframes dezoomQuestion 
+    {
+        0% 
+        {
+            top: 50%;
+            font-size: 40px;
+            text-shadow: 2px 2px 9px rgba(0,0,0,0.50);
+        }
+  
+      100% 
+        {
+            top: 17px;
+            font-size: 30px;
+            text-shadow: 2px 2px 9px rgba(0,0,0,0);
+       }
+  }
+@keyframes apparaitreFleche {
+  0% {
+    top:-100px;
+      opacity: 0;
+  }
+
+  100% {
+    top:22px;
+    opacity: 100;
+      width: 30px;
+  }
+}
+
+
+@keyframes apparaitreQuestions {
+  0% {
+    top:-170px;
+      opacity: 0;
+  }
+
+  100% {
+    top:200px;
+    opacity: 100;
+  }
+}
+
+@media only screen and (max-width : 1000px)
+{
+    #bandeau_question
+    {
+        width: 700px;
+        left: 50%;
+        margin-left: -350px;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width : 1000px)
+{
+    #autres_questions
+    {
+        width: 700px;
+        left: 50%;
+        margin-left: -350px;
+        font-size: 30px; 
+        top:-190px;
+}
+
+@media only screen and (max-width : 1000px)
+{
+    #autres_questions>h2
+    {
+        height: 60px;
+    }
+}
+    
+/************** RESPONSIVE 720 ******************/
+    
+@media only screen and (max-width : 720px)
+{
+    @keyframes dezoomQuestion 
+    {
+        0% 
+        {
+            top: 50%;
+            font-size: 30px;
+            text-shadow: 2px 2px 9px rgba(0,0,0,0.50);
+        }
+  
+      100% 
+        {
+            top: 12px;
+            font-size: 20px;
+            text-shadow: 2px 2px 9px rgba(0,0,0,0);
+       }
+  }
+@keyframes apparaitreFleche {
+  0% {
+    top:-100px;
+      opacity: 0;
+  }
+
+  100% {
+    top:13px;
+    opacity: 100;
+      width: 20px;
+  }
+}
+}
+
+
+
+@media only screen and (max-width : 720px)
+{
+    #bandeau_question
+    {
+        width: 500px;
+        left: 50%;
+        margin-left: -250px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width : 720px)
+{
+    #autres_questions
+    {
+        width: 500px;
+        left: 50%;
+        margin-left: -250px;
+        font-size: 20px;
+        top:-210px;
+    }
+}
+
+    @media only screen and (max-width : 720px)
+{
+    #autres_questions>h2
+    {
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width : 1000px)
+{
+    h2>img{
+         height: auto;
+        width: 30px;
+        position: fixed;
+        left: 82%;
+    }
+}
+
+@media only screen and (max-width : 720px)
+{
+    h2>img{
+        left: 83%;
+        height: auto;
+        width: 30px;
+        position: fixed;
+    }
+}
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PEACH</title>
+        <link rel="stylesheet" type ="text/css" href="./css/styleBonjour.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+        <script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <video id="videoAccueil" autoplay loop>
+            <source src="accueil.webm" type="video/webm">
+            <source src="accueil.mp4" type="video/mp4">
+        </video>
+        <div id="ecran">
+            <div id="rectangle" class="centre">
+                
+                <div id="gauche" class="item">
+                    <div id="formulaire1">
+                        <header>
+	                       <h2>CONNEXION</h2>
+                            <!---<hr>---->
+	                   </header>
+                        <form method="post" action="php/scriptConnex.php" >
+                            <input class="champ" name="pseudo" type="text" placeholder="Votre pseudo" required/>
+                            <input class="champ" name="mdp" type="password" placeholder="Votre mot de passe" required/>
+                            <input type="submit" class="btnValider" value="Valider"/>
+	                   </form>
+                    </div>
+                    <div id="btnRetour1" class="btnRetour">
+                        <img id="iconeRetour1" alt="retour" src="medias/img/flecheRetour.png"/>
+                        <p>RETOUR</p>
+                    </div>
+                </div>
+
+                <div id="centre" class="item">
+
+                    <div id="entete">
+                        <img id="logoPeach" src="./medias/img/logoPeach.png"/>
+                    </div>
+
+                    <div id="corps">
+                        <div id="slogan">
+                            <p>Une minute, une vidéo, votre opinion</p>
+                        </div>
+
+                        <div id="iconesIndex">
+                            <img class="icone"  alt="Uploader" src="medias/img/iconUpload.png"/>
+                            <img class="icone"  id="iconeSP" alt="SP" src="medias/img/iconeSmartphone.png"/>
+                            <img class="icone"  alt="Visionner" src="medias/img/iconOeil.png"/>
+                        </div>
+
+                        <div id="boutonIndex">
+                            <div id="connexion" class="btn">
+                                    <p>CONNEXION</p>
+                            </div>
+
+                            <div id="btn2" class="btn">
+                                    <p>INSCRIPTION</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="droite" class="item">
+                    <div id="formulaire2">
+                        <header>
+	                       <h2>INSCRIPTION</h2>
+	                   </header>
+                        <form method="post" action="php/scriptInscr.php" >
+                            <div class="label">
+                                <label for="pseudo">Votre pseudo</label>
+                                <input class="champ" name="pseudo" type="text" placeholder="Pseudo" required>
+                                
+                            </div>
+                            <div class="label">
+                                <label for="email">Votre email</label>
+                                <input class="champ" name="email" type="text" placeholder="Email" required>
+                            </div>
+                            <div class="label">
+                                <label for="motDePasse">Votre mot de passe</label>
+                                <input class="champ" name="mdp" type="password" placeholder="Mot de passe" required>
+                            </div>
+                            <div class="label">
+                                <label for="verifierMotDePasse">Confirmez votre mot de passe</label>
+                                <input class="champ" name="mdpverif" type="password" placeholder="Confirmer le mot de passe" required>
+                            </div>
+                                <input type="submit" class="btnValider" value="Valider">
+	                   </form>
+                    </div>
+                    <div id="btnRetour2" class="btnRetour">
+                        <img id="iconeRetour2" alt="retour" src="medias/img/flecheRetour.png"/>
+                        <p>RETOUR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <script>
+            $("#btn2").click(function() {
+                $('#rectangle').removeClass( "centre" );    
+            $('#rectangle').addClass( "droite" )
+            
+});
+          
+            $("#connexion").click(function() {
+                $('#rectangle').removeClass( "centre" );     
+                $('#rectangle').addClass( "gauche" )
+});
+            
+            $(".btnRetour").click(function() {
+                $('#rectangle').removeClass( "droite" );
+                $('#rectangle').removeClass( "gauche" );     
+                $('#rectangle').addClass( "centre" )
+});
+        </script>
+    </body>
+    
+</html>

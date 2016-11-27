@@ -1,0 +1,558 @@
+@font-face{
+    font-family: 'Rounded';
+    src: url('../medias/fonts/Rounded_Elegance.ttf');
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+video#videoAccueil {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+video { display: block; }
+
+#rectangle{
+    
+    transition: left 0.5s;
+    
+    background-color: rgba(246,129,114,0.6);
+    width: 300vw;
+    min-height: 100vh;
+    text-align: center;
+    margin: auto;
+    display: inline-flex;
+    overflow-x: hidden;
+}
+
+.item{
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+}
+
+
+#corps {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 280px;
+}
+
+
+#ecran{
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+  
+}
+
+/************ BOUTONS RETOUR **************/
+
+.btnRetour{
+    cursor: pointer;
+    display: inline-flex;
+    font-family: Open sans;
+    font-size: 1.4rem;
+   /* margin-top: 500px;
+*/    color: white;
+    text-decoration: none;
+}
+
+.btnRetour p{
+    padding-top: 14px;
+}
+
+#iconeRetour1{
+    width:35px;
+    height: 35px;
+    margin-right: 9px;
+    padding-top:
+}
+
+#iconeRetour2{
+    width:35px;
+    height: 35px;
+    margin-right: 9px;
+}
+
+#btnRetour1{
+    position: absolute;
+    left:21px;
+    bottom: 15px;
+    
+}
+
+#btnRetour2{
+    position: absolute;
+    right: 21px;
+    bottom : 15px;
+}
+
+/*********************** FIN BOUTONS RETOUR ***********************/
+
+#entete{
+    background-color: #fff;
+    width: 100vw;
+    height: 140px;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    -webkit-box-shadow: 0px 7px 24px -6px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 7px 24px -6px rgba(0,0,0,0.3);
+    box-shadow: 0px 7px 24px -6px rgba(0,0,0,0.3);
+}
+
+#logoPeach{
+    margin-top: 12px;
+    width: 100px;
+}
+
+#slogan{
+    font-family: Rounded;
+    color: white;
+    font-size: 75px;
+}
+
+#boutonIndex{
+    font-family: Open sans;
+    font-weight: bold;
+    margin-top: 160px;
+}
+
+.btn{
+    cursor: pointer;
+    text-decoration: none;
+    color: #777676;
+    background-color:white;
+    border: none;
+    display:inline-block;
+    height: 50px;
+    width: 200px;
+    transition: all 0.5s;
+    -webkit-box-shadow: 0px 3px 21px -3px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 3px 21px -3px rgba(0,0,0,0.51);
+    box-shadow: 0px 3px 21px -3px rgba(0,0,0,0.51);
+}
+
+.btn:active{
+    transform: translate(0px,5px);
+   -webkit-transform: translate(0px,5px);
+}
+
+#rectangle.droite{
+    position: relative;
+    left: -200vw;
+}
+
+#rectangle.gauche{
+    position: relative;
+    left: 0;
+}
+
+#rectangle.centre{
+    position: relative;
+    left: -100vw;
+}
+
+#connexion{
+    line-height: 50px;
+    font-size: 1.3rem;
+}
+
+#btn2{
+    line-height: 50px;
+    margin-left: 120px;
+    font-size: 1.3rem;
+}
+
+#iconesIndex{
+    display: inline-flex;
+    flex-direction: row;
+    
+}
+
+.icone{
+    width: 150px;
+    height: 150px;
+    margin-top: 120px;
+    text-align: center;
+}
+
+#iconeSP{
+    padding-left: 135px;
+    padding-right: 135px;
+}
+
+/*************************** FORMULAIRE 1 **********************/
+#formulaire1{
+    margin-top: 310px;
+}
+
+h2{
+   font-family: 'Rounded';
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    /**text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);**/
+}
+
+/***hr{
+    padding-top: 30px;
+    width: 450px;
+}****/
+
+#formulaire1 .champ{
+    font-family: Open sans;
+    color: black;
+    margin-bottom: 50px;
+    width: 150px;
+    background-color: #e2e2e2;
+    text-indent: 10px;
+    width:230px;
+    height: 35px;
+    border: none;
+}
+
+
+.btnValider{
+    width:120px;
+    height: 40px;
+    color: #4e4e4e;
+    font-family:Open sans;
+    background-color:#ffffff;
+    border: none;
+    font-size:18px;
+    transition: all 0.5s;
+    text-indent:inherit;
+    -webkit-box-shadow: 0px 3px 21px -3px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 3px 21px -3px rgba(0,0,0,0.51);
+    box-shadow: 0px 3px 21px -3px rgba(0,0,0,0.51);
+}
+
+
+.btnValider:active
+{
+	transform: translate(0px,5px);
+   -webkit-transform: translate(0px,5px);
+}
+
+
+.btnValider:focus{
+    outline:none;
+}
+
+
+.btnValider:hover {
+    color: white;
+    background-color: #28e0f4;
+    cursor:pointer;
+}
+
+form{
+    margin-top: 85px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*************************** FIN FORMULAIRE 1 **********************/
+
+
+/*************************** FORMULAIRE 2 **********************/
+#formulaire2{
+    margin-top: 310px;
+}
+
+/*#formulaire2 form{
+    margin-top: 85px;
+    display: inline-flex;
+    flex-direction: column;
+}*/
+
+#formulaire2 .champ{
+    font-family: Open sans;
+    color: black;
+    width: 150px;
+    background-color: #e2e2e2;
+    text-indent: 10px;
+    width:230px;
+    height: 35px;
+    border: none;
+}
+
+label{
+    color: white;
+    font-family: Open sans;
+    font-size: 20px;
+    display: block;
+    float: left;
+    width: 300px;
+    text-align: left;
+}
+
+.label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+/*************************** FIN FORMULAIRE 2 **********************/
+
+/*************************** RESPONSIVE **********************/
+
+
+@media only screen and (max-width: 950px){
+    #slogan{
+        font-size:45px;
+    } 
+}
+
+@media only screen and (max-width: 750px){
+    #iconesIndex{
+        flex-direction: row;
+    }
+    
+    .icone{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 482px){
+         #iconesIndex{
+            flex-direction: row;
+            align-items: center;
+        }
+
+        #boutonIndex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 95px;
+
+        }
+
+        #btn2{
+            margin-left: 0;
+            margin-top: 35px;
+        }
+
+        .icone{
+            width:60px;
+            height: 60px;
+            margin-top: 100px;
+        }
+
+        #iconeSP{
+        padding-left: 80px;
+        padding-right: 80px;
+        }
+}
+
+@media only screen and (max-width: 435px){
+    #slogan{
+        font-size:30px;
+    } 
+    
+    #corps{
+        margin-top: 250px;
+    }
+    
+    #iconesIndex{
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .icone{
+        width:65px;
+        height: 65px;
+        margin-top: 50px;
+    }
+    
+    #boutonIndex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 69px;
+    }
+    
+    #btn2{
+        margin-left: 0;
+        margin-top: 35px;
+    }
+    
+    #iconeSP{
+    padding-left: 46px;
+    padding-right: 46px;
+    }
+    
+    .btnRetour p{
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 800px){
+    #formulaire2{
+        margin-top: 200px;
+    }
+    
+    #formulaire1{
+        margin-top: 220px;
+    }
+    
+    .label{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    
+    label{
+        padding-bottom: 8px;
+    }
+    
+    #formulaire2 form{
+        margin-top: 50px;
+    }
+
+}
+    
+
+@media only screen and (max-height: 700px){
+    #entete{
+        height: 100px;
+    }
+    
+     #formulaire1{
+         margin-top: 190px;
+     }
+    
+    #logoPeach{
+    margin-top: 8px;
+    width: 68px;
+    }
+    
+    #corps{
+        margin-top: 180px;
+    }
+    
+    #formulaire2 {
+        margin-top: 130px;
+    }
+    
+    #iconeRetour2{
+        
+    }
+    
+}
+
+@media only screen and (max-height: 500px){
+    #iconeSP{
+    padding-left: 40px;
+    padding-right: 40px;
+    }
+    
+    #corps{
+        margin-top: 155px;
+    }
+    
+    .icone{
+        width:55px;
+        height: 55px;
+        margin-top: 50px;
+    }
+    
+    #slogan{
+        font-size:25px;
+    } 
+    
+    #btn2{
+        line-height: 40px;
+        margin-top: 21px;
+        font-size: 1.1rem;
+    }
+    
+    .btn{
+        width: 140px;
+        height: 40px;
+    }
+    
+    #boutonIndex{
+        margin-top: 40px;
+        
+    }
+    
+    #connexion{
+        line-height: 40px;
+        font-size: 1.1rem;
+    }
+    
+    #formulaire1{
+         margin-top: 135px;
+     }
+    
+    #formulaire1 form{
+        margin-top: 55px;
+    }
+    
+    #rectangle h2{
+        font-size: 1.7rem;
+    }
+    
+}

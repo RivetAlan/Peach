@@ -1,0 +1,124 @@
+@font-face{
+    font-family: Rounded;
+    src: url('../medias/fonts/Rounded_Elegance.ttf');
+}
+
+@font-face{
+    font-family: Open sans;
+    src: url('../medias/fonts/OpenSans-Regular.ttf');
+}
+
+
+#description strong{
+    color: #f68172;
+}
+
+
+
+
+
+#mainInfo{
+    background-color: rgb(224, 224, 224);
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    position: fixed;
+    display: flex;
+
+}
+
+#rectangleInfo{
+    background-color: #ffffff;
+    width: 95vw;
+    height: 95vh;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: -50;
+    -webkit-box-shadow: -7px 7px 37px -12px rgba(0,0,0,0.42);
+    -moz-box-shadow: -7px 7px 37px -12px rgba(0,0,0,0.42);
+    box-shadow: -7px 7px 37px -12px rgba(0,0,0,0.42);
+}
+
+#logo{
+    width: 125px;
+    padding-top: 30px;
+}
+
+hr{
+    height: 60vh;
+    margin-top: 80px;
+    position: relative;
+    z-index: -20;
+}
+
+#aide{
+    width:45%;
+    padding-top: 78px;
+}
+
+#description{
+    width:45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    
+
+}
+.picto{
+    width: 65px;
+}
+
+#description p{
+    font-family: Open sans;
+    text-align: justify;
+    line-height: 21px;
+}
+
+#pictoSP{
+    margin-top: 50px;
+}
+
+#paragraphe4{
+    text-align: center !important;
+    /*display: inline-block;*/
+}
+
+#corpsInfo{
+    display:flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#aide p{
+    font-family: Open sans;
+    text-align: justify;
+    line-height: 21px;
+}
+
+#aide strong{
+    color: #28e0f4;
+}
+
+.aide{
+    display: flex;
+    align-items: center;
+    padding-bottom: 55px;
+}
+
+.aide i{
+    padding-right: 50px;
+}
+
+#close {
+    position: absolute; 
+    right: 20px;
+    top : 10px;
+    cursor: pointer;
+}
